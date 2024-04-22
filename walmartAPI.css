@@ -1,0 +1,24 @@
+.spinner {
+  border: 4px solid rgba(0,0,0,.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #3f51b5;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+textarea:hover {
+    border: 1px solid #3f51b5; /* Changes the border color on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow around the textarea */
+}
+  
+textarea:focus {
+    border-color: #303f9f; /* Darker shade when focused for better visibility */
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 0 2px #3f51b5; /* Adds a glow effect, making it clear that the textarea is focused */
+}
